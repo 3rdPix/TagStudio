@@ -5,10 +5,17 @@
 """TagStudio launcher."""
 
 from src.core.ts_core import TagStudioCore
-from src.cli.ts_cli import CliDriver  # type: ignore
-from src.qt.ts_qt import QtDriver
+#from src.cli.ts_cli import CliDriver  # type: ignore
+#from src.qt.ts_qt import QtDriver
+from src.qtfl.ts_qtfl import QtFlDriver
 import argparse
 import traceback
+from typing import Protocol
+
+class UIDriver(Protocol):
+
+    def __init__(self, core, args) -> None: ...
+    def start() -> None: ...
 
 
 def main():
@@ -51,7 +58,7 @@ def main():
         "--ui",
         dest="ui",
         type=str,
-        help="User interface option for TagStudio. Options: qt, cli (Default: qt)",
+        help="User interface option for TagStudio. Options: qt, cli, qtfl (Default: qt)",
     )
     parser.add_argument(
         "--ci",
@@ -61,23 +68,28 @@ def main():
     args = parser.parse_args()
 
     core = TagStudioCore()  # The TagStudio Core instance. UI agnostic.
-    driver = None  # The UI driver instance.
-    ui_name: str = "unknown"  # Display name for the UI, used in logs.
-
+    
     # Driver selection based on parameters.
-    if args.ui and args.ui == "qt":
-        driver = QtDriver(core, args)
-        ui_name = "Qt"
-    elif args.ui and args.ui == "cli":
-        driver = CliDriver(core, args)
-        ui_name = "CLI"
-    else:
-        driver = QtDriver(core, args)
-        ui_name = "Qt"
+    # will default to Qt if none is given
+    driver_instance: UIDriver
+    ui_name: str
+    match args.ui:
+        
+        case "cli":
+            driver_instance = CliDriver(core, args)
+            ui_name = "CLI"
+
+        case "qtfl":
+            driver_instance = QtFlDriver(core, args)
+            ui_name = "QtFl"
+
+        case _:
+            driver_instance = QtDriver(core, args)
+            ui_name = "Qt"
 
     # Run the chosen frontend driver.
     try:
-        driver.start()
+        driver_instance.start()
     except Exception:
         traceback.print_exc()
         print(f"\nTagStudio Frontend ({ui_name}) Crashed! Press Enter to Continue...")
