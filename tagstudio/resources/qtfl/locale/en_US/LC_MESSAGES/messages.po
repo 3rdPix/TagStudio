@@ -1,0 +1,124 @@
+# English (United States) translations for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-08-26 10:59-0400\n"
+"PO-Revision-Date: 2024-08-26 11:01-0400\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en_US\n"
+"Language-Team: en_US <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: src/qtfl/gui/main_window.py:81
+msgid "COMMANDBAR_FILE_BUTTON"
+msgstr "File"
+
+#: src/qtfl/gui/main_window.py:84
+msgid "COMMANDBAR_FILE_MENU_ADD"
+msgstr "Create new / Open"
+
+#: src/qtfl/gui/main_window.py:85
+msgid "COMMANDBAR_FILE_MENU_SAVE"
+msgstr "Save library"
+
+#: src/qtfl/gui/main_window.py:86
+msgid "COMMANDBAR_FILE_MENU_SAVE_BACKUP"
+msgstr "Save library backup"
+
+#: src/qtfl/gui/main_window.py:88
+msgid "COMMANDBAR_FILE_MENU_REFRESH"
+msgstr "Refresh directories"
+
+#: src/qtfl/gui/main_window.py:90
+msgid "COMMANDBAR_FILE_MENU_CLOSE"
+msgstr "Close library"
+
+#: src/qtfl/gui/main_window.py:96
+msgid "COMMANDBAR_EDIT_BUTTON"
+msgstr "Edit"
+
+#: src/qtfl/gui/main_window.py:98
+msgid "COMMANDBAR_EDIT_MENU_NEW"
+msgstr "Create new tag"
+
+#: src/qtfl/gui/main_window.py:101
+msgid "COMMANDBAR_EDIT_MENU_SELECTALL"
+msgstr "Select all"
+
+#: src/qtfl/gui/main_window.py:102
+msgid "COMMANDBAR_EDIT_MENU_CLEARSELECT"
+msgstr "Clear selection"
+
+#: src/qtfl/gui/main_window.py:105
+msgid "COMMANDBAR_EDIT_MENU_MANAGE_EXNTENSION"
+msgstr "Manage file extension"
+
+#: src/qtfl/gui/main_window.py:106
+msgid "COMMANDBAR_EDIT_MENU_MANAGE_TAGS"
+msgstr "Manage tags"
+
+#: src/qtfl/gui/main_window.py:112
+msgid "COMMANDBAR_TOOLS_BUTTON"
+msgstr "Tools"
+
+#: src/qtfl/gui/main_window.py:115
+msgid "COMMANDBAR_TOOLS_MENU_FIX_ENTRIES"
+msgstr "Fix unlinked entries"
+
+#: src/qtfl/gui/main_window.py:116
+msgid "COMMANDBAR_TOOLS_MENU_FIX_DUPLICATE"
+msgstr "Fix duplicated files"
+
+#: src/qtfl/gui/main_window.py:117
+msgid "COMMANDBAR_TOOLS_MENU_NEW_COLLAGE"
+msgstr "Create collage"
+
+#: src/qtfl/gui/main_window.py:123
+msgid "COMMANDBAR_MACROS_BUTTON"
+msgstr "Macros"
+
+#: src/qtfl/gui/main_window.py:126
+msgid "COMMANDBAR_MACROS_MENU_AUTOFILL"
+msgstr "Autofill"
+
+#: src/qtfl/gui/main_window.py:127
+msgid "COMMANDBAR_MACROS_MENU_SORT"
+msgstr "Sort fields"
+
+#: src/qtfl/gui/main_window.py:128
+msgid "COMMANDBAR_MACROS_MENU_FOLDERS"
+msgstr "Folders to tags"
+
+#: src/qtfl/gui/main_window.py:134
+msgid "COMMANDBAR_WINDOW_BUTTON"
+msgstr "Window"
+
+#: src/qtfl/gui/main_window.py:137
+msgid "COMMANDBAR_WINDOW_MENU_OPEN_AT_START"
+msgstr "Open library on start"
+
+#: src/qtfl/gui/main_window.py:138
+msgid "COMMANDBAR_WINDOW_MENU_SHOW_RECENT"
+msgstr "Show recent libraries"
+
+#: src/qtfl/gui/main_window.py:144
+msgid "COMMANDBAR_HELP_BUTTON"
+msgstr "Help"
+
+#: src/qtfl/gui/main_window.py:147
+msgid "COMMANDBAR_HELP_MENU_GITHUB"
+msgstr "Open Github's repository"
+
+#: src/qtfl/gui/main_window.py:159
+msgid "SEARCHBAR_PLACEHOLDER"
+msgstr "Enter search"
+

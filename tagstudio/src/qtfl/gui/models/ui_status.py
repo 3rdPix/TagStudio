@@ -10,3 +10,10 @@ class NavigationState:
     search_text: str | None = None,
     thumb_size = None,
     spacing = None
+
+@dataclass
+class WindowStatus:
+    width: int
+    height: int
+    x_coordinate: int
+    y_coordinate: int
